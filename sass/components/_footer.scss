@@ -1,0 +1,119 @@
+#footer{
+    background-color: $color-black-1;
+    .container{
+        padding: 3rem 1rem;
+        color: $color-white;
+        width: auto;
+        h6{
+            font-size: 2rem;
+            font-weight: 400;
+            margin: 0;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .enlaces{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 2rem;
+
+                .title{
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                    margin: 0;
+                    margin-bottom: 1rem;
+                }
+
+                .link{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 0.5rem;
+                    div{
+                        width: 10px;
+                        height: 2px;
+                        background-color: $color-white;
+                        margin-right: 0.5rem;
+                    }
+                    a{
+                        font-size: 1rem;
+                        margin: 0;
+                        color: $color-white;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            .media{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .title{
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                    margin: 0;
+                    margin-bottom: 1rem;
+                }
+
+                ul{
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        a{
+                            color: $color-white;
+                            padding: 0 1rem;
+                            &:hover{
+                                i{
+                                    color: $color-blue-2;
+                                }
+                            }
+                            i{
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container{
+            .content{
+                flex-direction: row;
+                .enlaces{
+                    align-items: flex-start;
+                }
+                .media{
+                    align-items: flex-end;
+                    ul{
+                        li{
+                            &:last-child{
+                                a{
+                                    padding: 0;
+                                    padding-left: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

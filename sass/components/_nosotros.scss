@@ -1,8 +1,10 @@
 #nosotros{
-    margin-top: 200px;
+    margin-top: 240px;
     background-color: $color-gray-1;
     position: relative;
     .content{
+
+        
         width: auto;
         background: 
         /* top, transparent red */ 
@@ -11,7 +13,7 @@
           rgba(0, 0, 0, 0.5)
         ),
         /* bottom, image */
-        url('../../img/architecture-1857175_1280.jpg');
+        url('../img/architecture-1857175_1280.jpg');
         
         padding: 3rem 1rem;
         .title{
@@ -26,6 +28,10 @@
             background-color: $color-blue-1;
             color: $color-white;
             padding: 2rem 1rem;
+            transition: transform .4s ease-in-out;
+            &:hover{
+                transform: scale(1.05);
+            }
             div{
                 text-align: start;
                 margin-bottom: 2rem;
@@ -94,6 +100,7 @@
                     width: 100%;
                     color: $color-black-1;
                     font-size: 3rem;
+                    z-index: 200;
                     span{
                         color: $color-blue-2;
                     }
