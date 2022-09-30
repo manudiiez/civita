@@ -1,0 +1,222 @@
+#modelos{
+    background-color: $color-white;
+    .container{
+        padding: 3rem 1rem;
+        width: auto;
+        h4{
+            font-size: 2rem;
+            font-weight: 400;
+            text-align: center;
+            margin: 0;
+            margin-bottom: 3rem;
+            span{
+                color: $color-blue-2;
+            }
+        }
+
+        .modelos__list{
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .modelo__card{
+                background-color: $color-blue-1;
+                padding: 2rem 1rem;
+                color: $color-white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 2rem;
+
+                .body{
+                    .modelo__number{
+                        box-sizing: border-box;
+                        width: 100px;
+                        height: 80px;
+                        font-size: 2rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 10px solid $color-gray-2;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    .modelo__text{
+                        h5{
+                            font-size: 2rem;
+                            font-weight: 400;
+                            margin: 0;
+                            margin-bottom: 1.5rem;
+                        }
+
+                        p{
+                            font-size: 1rem;
+                            font-weight: 300;
+                            margin: 0;
+                            margin-bottom: 1.5rem;
+                            color: $color-gray-1;
+
+                        }
+                    }
+
+                    .modelo__caracteristicas{
+                        margin-bottom: 2rem;
+                        .caracteristicas__row{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-bottom: 1rem;
+                            
+                            div{
+                                display: grid;
+                                grid-template-columns: 1fr 2fr;
+                                align-items: center;
+                                &:first-child{
+                                    width: 80%;
+                                    justify-items: start;
+                                }
+                                &:last-child{
+                                    width: 20%;
+                                    justify-items: end;
+                                }
+
+                                .name{
+                                    font-size: 1.3rem;
+                                    margin: 0;
+                                }
+                                
+                                .value{
+                                    font-size: 1.3rem;
+                                    font-weight: 300;
+                                    color: $color-gray-1;
+                                    margin: 0;
+
+                                    &.price{
+                                        color: #00B912;
+                                        font-weight: 400;
+                                    }
+                                    
+                                }
+
+
+                            }
+                        }
+                    }
+
+                    button{
+                        display: none;
+                    }
+                }
+
+                .card__img{
+                    img{
+                        box-sizing: border-box;
+                        width: 100%;
+                        margin-bottom: 1rem;
+                        border: 15px solid $color-black-2;
+                    }
+
+                    button{
+                        width: 100%;
+                        font-size: 1.3rem;
+                        color: $color-white;
+                        background-color: $color-black-2;
+                        border: none;
+                        padding: 1rem 0;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container{
+            padding: 100px 1rem;
+
+            h4{
+                font-size: 3rem;
+                margin-bottom: 5rem;
+
+                span{
+                    color: $color-blue-2;
+                }
+            }
+
+            .modelos__list{
+                .modelo__card{
+                    margin-bottom: 6rem;
+
+                    flex-direction: row-reverse;
+                    padding: 2rem 5rem 5rem;
+                    .body{
+                        width: 100%;
+                        padding-left: 1rem;
+                        .modelo__number{
+                            font-size: 2.5rem;
+                            width: 120px;
+                            height: 90px;
+                            margin-bottom: 2rem;
+
+                        }
+
+                        .modelo__text{
+                            h5{
+                                font-size: 2.5rem;
+                                margin-bottom: 1rem;
+                            }
+                            p{
+                                font-size: 1.3rem;
+                                margin-bottom: 2rem;
+
+                            }
+                        }
+
+                        .modelo__caracteristicas{
+                            margin-bottom: 5rem;
+                            .caracteristicas__row{
+                                margin-bottom: 2rem;
+
+                            }
+                        }
+
+                        button{
+                            width: 100%;
+                            font-size: 1.3rem;
+                            color: $color-white;
+                            background-color: $color-black-2;
+                            border: none;
+                            padding: 1rem 0;
+                            display: block;
+
+                        }
+
+
+                    }
+                    
+                    .card__img{
+                        position: relative;
+                        width: 100%;
+                        height: 500px;
+                        img{
+                            position: absolute;
+                            height: 600px;
+                            top: -98px;
+                            left: 0;
+                            border: 20px solid $color-white;
+                            object-fit: cover;
+                            margin: 0;
+                        }
+
+                        button{
+                            display: none;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
