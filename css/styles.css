@@ -9,6 +9,9 @@
   box-sizing: border-box;
   z-index: 300;
 }
+#menu.bg__dark {
+  background-color: rgba(0, 0, 0, 0.65);
+}
 #menu .container {
   display: flex;
   justify-content: space-between;
@@ -125,6 +128,7 @@
   }
   #menu .container .container__links .links ul li a:hover {
     text-decoration: underline;
+    background-color: transparent;
   }
   #menu .container i {
     display: none;
@@ -133,15 +137,77 @@
 
 #header {
   position: relative;
-}
-#header .img {
-  background-color: red;
   width: 100%;
   height: 300px;
   background-image: url("../img/house-gf4dbe6c86_1280.jpg");
   background-size: cover;
   background-position: center;
-  background-color: blue;
+}
+#header .container {
+  position: absolute;
+  bottom: -67%;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  background-color: #001845;
+  color: #ffffff;
+  padding: 3rem 1rem;
+  box-sizing: border-box;
+}
+#header .container div {
+  width: 100%;
+  height: 100%;
+  max-width: 454px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+#header .container div p {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+#header .container div p span {
+  color: #0466C8;
+  font-weight: 600;
+}
+#header .container div h1 {
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+#header .container div button {
+  background-color: #0466C8;
+  color: #ffffff;
+  padding: 1rem 0;
+  border: none;
+  width: 150px;
+}
+@media (min-width: 768px) {
+  #header {
+    height: 500px;
+  }
+  #header .container {
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+  }
+  #header .container div {
+    margin-right: 2rem;
+    margin-left: auto;
+    align-items: flex-start;
+  }
+  #header .container div p {
+    font-size: 3rem;
+  }
+  #header .container div h1 {
+    text-align: start;
+  }
 }
 
 body {
@@ -149,7 +215,6 @@ body {
   padding: 0;
   font-family: "Inter", sans-serif;
   height: 200vh;
-  line-height: 150%;
 }
 
 html {

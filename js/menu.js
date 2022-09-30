@@ -12,3 +12,8 @@ button__close__menu.addEventListener('click', () => {
 button__bg__menu.addEventListener('click', () => {
     menu.classList.remove('active')
 })
+
+
+window.addEventListener('scroll', function(){
+    menu.classList.toggle('bg__dark', window.scrollY>380)
+})

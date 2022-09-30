@@ -1,14 +1,81 @@
 #header{
     position: relative;
     
-    .img{
-        background-color: red;
-        width: 100%;
-        height: 300px;
-        background-image: url('../img/house-gf4dbe6c86_1280.jpg');
-        background-size: cover;
-        background-position: center;
-        background-color: blue;
+    width: 100%;
+    height: 300px;
+    background-image: url('../img/house-gf4dbe6c86_1280.jpg');
+    background-size: cover;
+    background-position: center;
 
+    
+    .container{
+        position: absolute;
+        bottom: -67%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: $color-blue-1;
+        color: $color-white;
+        padding: 3rem 1rem;
+        box-sizing: border-box;
+        div{
+            width: 100%;
+            height: 100%;
+            max-width: 454px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            margin: 0 auto;
+
+            p{
+                font-size: 2rem;
+                font-weight: 400;
+                margin: 0;
+                margin-bottom: 2rem;
+                span{
+                    color: $color-blue-2;
+                    font-weight: 600;
+                }
+            }
+            h1{
+                font-weight: 300;
+                font-size: 1rem;
+                margin: 0;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+
+            button{
+                background-color: $color-blue-2;
+                color: $color-white;
+                padding: 1rem 0;
+                border: none;
+                width: 150px;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        height: 500px;
+        .container{
+            bottom: 0;
+            width: 50%;
+            height: 100%;
+            div{
+                margin-right: 2rem;
+                margin-left: auto;
+
+                align-items: flex-start;
+                p{
+                    font-size: 3rem;
+                }
+                h1{
+                    text-align: start;
+                }
+            }
+        }
     }
 }
