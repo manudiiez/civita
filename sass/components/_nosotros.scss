@@ -1,0 +1,117 @@
+#nosotros{
+    margin-top: 200px;
+    background-color: $color-gray-1;
+    position: relative;
+    .content{
+        width: auto;
+        background: 
+        /* top, transparent red */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ),
+        /* bottom, image */
+        url('../../img/architecture-1857175_1280.jpg');
+        
+        padding: 3rem 1rem;
+        .title{
+            font-size: 2rem;
+            color: $color-white;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .body{
+            width: auto;
+            background-color: $color-blue-1;
+            color: $color-white;
+            padding: 2rem 1rem;
+            div{
+                text-align: start;
+                margin-bottom: 2rem;
+                p{
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    margin: 0;
+                    margin-bottom: 1rem;
+                }
+
+                h2{
+                    font-size: 1rem;
+                    font-weight: 400;
+                    margin: 0;
+                }
+
+                &:nth-of-type(2){
+                    text-align: end;
+                }
+
+                &:nth-of-type(4){
+                    margin: 0;
+                    text-align: end;
+                }
+            }
+        }
+
+        .img__container{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left:120%;
+            display: none;
+            img{
+                width: 100%;
+                height: 260px;
+                &:nth-of-type(1){
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        margin-top: 0px;
+
+        .container{
+            padding-top: 230px;
+            padding-bottom: 100px;
+            max-width: 992px;
+            width: 100%;
+            margin: auto;
+            .content{
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .title{
+                    position: absolute;
+                    top: 100px;
+                    left: 0;
+                    width: 100%;
+                    color: $color-black-1;
+                    font-size: 3rem;
+                    span{
+                        color: $color-blue-2;
+                    }
+                }
+                
+                .body{
+                    width: 320px;
+                    box-sizing: border-box;
+                    position: relative;
+                    div{
+                        p{
+                            font-size: 2rem;
+                        }
+    
+                    }
+                }
+                .img__container{
+                    display: block;
+                }
+            }
+        }
+        }
+}
