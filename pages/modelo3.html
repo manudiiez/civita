@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ------------------------------- SWIPER -------------------------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- --------------------------------- CSS --------------------------------- -->
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="menu">
+      <nav class="container__lg container">
+        <div class="container__logo">
+          <div>
+            <p class="title">CIVITA</p>
+            <p class="subtitle">DESARROLLOS INMOBILIARIOS</p>
+          </div>
+        </div>
+        <div class="container__links">
+          <div class="bg" id="bg__click"></div>
+          <div class="links">
+            <i class="fa-solid fa-xmark" id="button__xmark"></i>
+            <ul>
+              <li>
+                <a href="../index.html#header">Inicio</a>
+              </li>
+              <li>
+                <a href="../index.html#nosotros">Nosotros</a>
+              </li>
+              <li>
+                <a href="../index.html#modelos">Modelos</a>
+              </li>
+              <li>
+                <a href="#footer">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <i class="fa-solid fa-bars" id="button__bars"></i>
+      </nav>
+    </header>
+    <main>
+      <section id="modelo__header">
+        <img src="../img/modelo3_img1.jpg" alt="">
+      </section>
+      <section id="modelo__info" class="container__lg">
+        <div class="body">
+          <h1>Casa prefabricada Mónaco</h1>
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+            consequuntur tempore beatae odit aliquam qui in, deserunt ullam
+            voluptatem omnis facere doloremque vel reiciendis illo. Quam magnam
+            obcaecati porro tempora?
+          </h2>
+          <div class="caracteristicas">
+            <div class="row">
+              <div>
+                <p class="name">Desde</p>
+                <p class="value">$90000</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-bed name"></i>
+                <p class="value">4</p>
+              </div>
+            </div>
+            <div class="row">
+              <div>
+                <i class="fa-solid fa-chart-area name"></i>
+                <p class="value">Apartir de 90M2</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-toilet name"></i>
+                <p class="value">2</p>
+              </div>
+            </div>
+          </div>
+          <button>
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Contactanos por esta propiedad</span>
+          </button>
+        </div>
+        <div class="img__container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../img/modelo3_img2.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../img/modelo3_img1.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../img/modelo3_img3.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../img/modelo3_img4.jpg" alt="" />
+              </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section id="modelo__features">
+        <div class="container__lg container">
+          <div class="body">
+            <div>
+              <p>Caracteristicas</p>
+              <h3 class="text">
+                Vivienda de tres dormitorios, con dormitorio de 3.50m x 2.90m,
+                3.00m x 3.00m y de 2.00m x 3.00m, cocina, comedor, estar, baño.
+              </h3>
+            </div>
+            <div>
+              <p>Detalles y Terminaciones</p>
+              <h4 class="text">
+                Las casas están construidas con mediotronco machihembrado el
+                exterior y Durlock el interior. Los techos son cabreados a dos
+                aguas con cielo raso machimbrado y chapa de cinc antigranizo.
+                Las aberturas son corredizas en aluminio y tanto las paredes
+                como el techo llevan aislante termoacústico en su interior.
+              </h4>
+            </div>
+            <div>
+              <p>Metodos</p>
+              <h5 class="text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos,
+                ea veniam nulla et facere a officia facilis.
+              </h5>
+            </div>
+          </div>
+          <div class="img">
+            <img src="../img/nosotros_bg.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container__lg container">
+        <h6>CIVITA</h6>
+        <div class="content">
+          <div class="enlaces">
+            <p class="title">Enlaces principales</p>
+            <div class="link">
+              <div></div>
+              <a href="#">Nosotros</a>
+            </div>
+            <div class="link">
+              <div></div>
+              <a href="#">Modelos</a>
+            </div>
+          </div>
+          <div class="media">
+            <p class="title">Redes sociales</p>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ------------------------------- SCRIPTS ------------------------------- -->
+    <script
+      src="https://kit.fontawesome.com/a6528d3960.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ------------------------------ SWIPERJS ------------------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <!-- -------------------------------- MENU --------------------------------- -->
+    <script src="../js/menu.js"></script>
+  </body>
+</html>

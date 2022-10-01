@@ -13,7 +13,7 @@
           rgba(0, 0, 0, 0.5)
         ),
         /* bottom, image */
-        url('../img/architecture-1857175_1280.jpg');
+        url('../img/nosotros_bg.jpg');
         
         padding: 3rem 1rem;
         .title{
@@ -29,9 +29,6 @@
             color: $color-white;
             padding: 2rem 1rem;
             transition: transform .4s ease-in-out;
-            &:hover{
-                transform: scale(1.05);
-            }
             div{
                 text-align: start;
                 margin-bottom: 2rem;
@@ -55,8 +52,26 @@
                 }
 
                 &:nth-of-type(4){
-                    margin: 0;
+                    margin-bottom: 3rem;
                     text-align: end;
+                }
+                &:nth-of-type(5){
+                    margin-bottom: 0;
+                    text-align: end;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: $color-black-1;
+                    background-color: $color-white;
+                    padding: 1rem;
+                    text-align: center;
+                    display: block;
+                    transition: all .2s;
+                    &:hover{
+                        background: $color-black-1;
+                        color: $color-white;
+                    }
                 }
             }
         }
@@ -66,7 +81,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            left:120%;
+            left:110%;
             display: none;
             img{
                 width: 100%;
@@ -77,6 +92,7 @@
             }
         }
     }
+    
 
     @media (min-width: 768px) {
         margin-top: 0px;
@@ -122,5 +138,12 @@
                 }
             }
         }
+    }
+    @media (min-width: 810px) {
+        .container{
+            .content{
+                width: 70%;
+            }
         }
+    }
 }
