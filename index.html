@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ------------------------------- SWIPER -------------------------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <!-- --------------------------------- CSS --------------------------------- -->
     <link rel="stylesheet" href="./css/styles.css" />
     <title>CIVITA</title>
@@ -256,7 +261,60 @@
         </div>
       </section>
       <section id="interiores">
-        
+        <div class="container__lg container">
+            <h5>Nuestros interiores</h5>
+            <div class="body">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div>
+                            <img src="./img/interior1.jpg" alt="">
+                        </div>
+                        <h6>Interior Rafael</h6>
+                      </div>
+                      <div class="swiper-slide">
+                        <div>
+                            <img src="./img/interior2.jpg" alt="">
+                        </div>
+                        <h6>Interior Rafael</h6>
+                      </div>
+                      <div class="swiper-slide">
+                        <div>
+                            <img src="./img/interior3.jpg" alt="">
+                        </div>
+                        <h6>Interior Rafael</h6>
+                      </div>
+                      <div class="swiper-slide">
+                        <div>
+                            <img src="./img/interior4.jpg" alt="">
+                        </div>
+                        <h6>Interior Rafael</h6>
+                      </div>
+                      <div class="swiper-slide">
+                        <div>
+                            <img src="./img/interior5.jpg" alt="">
+                        </div>
+                        <h6>Interior Rafael</h6>
+                      </div>
+                      <div class="swiper-slide">
+                        <div>
+                            <img src="./img/interior6.jpg" alt="">
+                        </div>
+                        <h6>Interior Rafael</h6>
+                      </div>
+                      <div class="swiper-slide">
+                        <div>
+                            <img src="./img/interior7.jpg" alt="">
+                        </div>
+                        <h6>Interior Rafael</h6>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
       </section>
       
     </main>
@@ -309,7 +367,24 @@
       src="https://kit.fontawesome.com/a6528d3960.js"
       crossorigin="anonymous"
     ></script>
+    <!-- ------------------------------ SWIPERJS ------------------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- -------------------------------- MENU --------------------------------- -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+    </script>
     <script src="./js/menu.js"></script>
   </body>
 </html>
