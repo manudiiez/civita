@@ -206,9 +206,6 @@
   #menu .container .container__links .links .links__list li .dropdown ul li a {
     padding: 0.5rem 0;
   }
-  #menu .container .container__links .links .links__list li .dropdown ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.65);
-  }
   #menu .container #button__bars {
     display: none;
   }
@@ -1145,6 +1142,132 @@
   }
   #modelo__features .container .body div .text {
     font-size: 1.3rem;
+  }
+}
+
+#proyectos {
+  background-color: #ffffff;
+  padding: 0 1rem;
+}
+#proyectos .container {
+  margin-top: 100px;
+}
+#proyectos .container .title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #0466C8;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+#proyectos .container h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+#proyectos .container .card__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+#proyectos .container .card__list .card {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid #DCDFE5;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#proyectos .container .card__list .card:hover .img img {
+  opacity: 1;
+}
+#proyectos .container .card__list .card:hover .img div {
+  bottom: -100%;
+}
+#proyectos .container .card__list .card .img {
+  position: relative;
+  background-color: #0466C8;
+  height: 200px;
+  overflow: hidden;
+}
+#proyectos .container .card__list .card .img img {
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+#proyectos .container .card__list .card .img div {
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+  background-color: #0466C8;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+}
+#proyectos .container .card__list .card .img div p {
+  padding: 1rem;
+  margin: 0;
+}
+#proyectos .container .card__list .card .img.proceso {
+  background-color: #c9c903;
+}
+#proyectos .container .card__list .card .img.proceso div {
+  background-color: #c9c903;
+}
+#proyectos .container .card__list .card .img.terminado {
+  background-color: #008000;
+}
+#proyectos .container .card__list .card .img.terminado div {
+  background-color: #008000;
+}
+#proyectos .container .card__list .card .body {
+  padding: 1rem;
+}
+#proyectos .container .card__list .card .body h2 {
+  color: #0466C8;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+#proyectos .container .card__list .card .body h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+#proyectos .container .card__list .card .body .caracteristicas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#proyectos .container .card__list .card .body .caracteristicas div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+#proyectos .container .card__list .card .body .caracteristicas div i {
+  margin-right: 1rem;
+  color: #ABABAB;
+}
+#proyectos .container .card__list .card .body .caracteristicas div p {
+  margin: 0;
+}
+@media (min-width: 768px) {
+  #proyectos .container .title {
+    font-size: 3rem;
+  }
+  #proyectos .container h1 {
+    margin-bottom: 2rem;
+  }
+  #proyectos .container .card__list {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 

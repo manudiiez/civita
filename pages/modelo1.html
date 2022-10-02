@@ -27,18 +27,39 @@
           <div class="bg" id="bg__click"></div>
           <div class="links">
             <i class="fa-solid fa-xmark" id="button__xmark"></i>
-            <ul>
+            <ul class="links__list">
               <li>
-                <a href="../index.html#header">Inicio</a>
+                <a href="../index.html#header" class="link__button">Inicio</a>
               </li>
               <li>
-                <a href="../index.html#nosotros">Nosotros</a>
+                <ul class="dropdown">
+                  <li class="button" id="dropdown">
+                    <p>Nosotros</p>
+                    <i class="fa-solid fa-angle-down"></i>
+                  </li>
+                  <li>
+                    <ul id="dropdown__container">
+                      <li>
+                        <a href="#">¿Quienes somos?</a>
+                      </li>
+                      <li>
+                        <a href="#">Proyectos en desarrollo</a>
+                      </li>
+                      <li>
+                        <a href="#">CIVITA inversores</a>
+                      </li>
+                      <li>
+                        <a href="#">CIVITA sustentable</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
               <li>
-                <a href="../index.html#modelos">Modelos</a>
+                <a href="../index.html#modelos" class="link__button">Modelos</a>
               </li>
               <li>
-                <a href="#footer">Contacto</a>
+                <a href="#footer" class="link__button">Contacto</a>
               </li>
             </ul>
           </div>
@@ -231,14 +252,14 @@
             </li>
             <li>
               <a href="#">
-                <i class="fa-brands fa-instagram"></i>
-                <p>@civita__casas</p>
+                <i class="fa-solid fa-envelope"></i>
+                <p>civitaconstrucciones@gmail.com</p>
               </a>
             </li>
             <li>
               <a href="#">
-                <i class="fa-solid fa-envelope"></i>
-                <p>civitaconstrucciones@gmail.com</p>
+                <i class="fa-brands fa-instagram"></i>
+                <p>@civita__casas</p>
               </a>
             </li>
           </ul>
