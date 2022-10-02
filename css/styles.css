@@ -144,95 +144,86 @@
 }
 
 #header {
-  position: relative;
   width: 100%;
   height: 300px;
   background-image: url("../img/header_img.jpg");
   background-size: cover;
   background-position: center;
+  margin-bottom: 260px;
 }
-#header .container {
-  position: absolute;
-  bottom: -87%;
-  left: 0;
+#header .body {
   width: 100%;
-  height: fit-content;
   background-color: #001845;
-  color: #ffffff;
-  padding: 3rem 1rem;
-  box-sizing: border-box;
-  z-index: 100;
+  position: relative;
+  bottom: -210px;
+  height: 350px;
 }
-#header .container .body {
-  width: 100%;
-  height: 100%;
-  max-width: 454px;
+#header .body .text {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0 auto;
+  color: #ffffff;
+  padding: 3rem 1rem;
 }
-#header .container .body .title {
+#header .body .text .title {
   font-size: 5rem;
   margin: 0;
 }
-#header .container .body .title strong {
+#header .body .text .title strong {
   font-weight: 400;
 }
-#header .container .body .subtitle {
+#header .body .text .subtitle {
   font-size: 1rem;
   font-weight: 400;
   margin: 0;
   margin-bottom: 2rem;
   text-align: center;
 }
-#header .container .body .subtitle span {
+#header .body .text .subtitle span {
   color: #0466C8;
   font-weight: 600;
 }
-#header .container .body h1 {
+#header .body .text h1 {
   font-weight: 300;
   font-size: 1rem;
   margin: 0;
   margin-bottom: 2rem;
   text-align: center;
 }
-#header .container .body button {
+#header .body .text button {
   background-color: #0466C8;
   color: #ffffff;
   padding: 1rem 0;
   border: none;
   width: 150px;
 }
-#header .container .body button:hover {
+#header .body .text button:hover {
   background-color: rgba(0, 0, 0, 0.65);
 }
 @media (min-width: 768px) {
   #header {
     height: 500px;
+    margin-bottom: 0px;
   }
-  #header .container {
-    left: 0;
-    bottom: 0;
+  #header .body {
     width: 50%;
-    height: 100%;
+    bottom: 0;
+    height: 500px;
   }
-  #header .container .body {
-    margin-right: 2rem;
+  #header .body .text {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    max-width: 496px;
     margin-left: auto;
     align-items: flex-start;
+    padding-right: 5rem;
   }
-  #header .container .body .title__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  #header .container .body .title__container .title {
+  #header .body .text .title {
     font-size: 5rem;
   }
-  #header .container .body h1 {
+  #header .body .text h1 {
     text-align: start;
   }
 }
