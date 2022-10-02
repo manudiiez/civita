@@ -1,1 +1,2 @@
-## sass --watch scss/style.scss css/style.css
+## Github pages
+Link al sitio web [CIVITA](https://manudiiez.github.io/civita/) 

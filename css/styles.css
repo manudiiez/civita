@@ -617,6 +617,47 @@
   }
 }
 
+#fixed__media {
+  position: fixed;
+  z-index: 200;
+  bottom: 2rem;
+  right: 0;
+  background-color: #25D366;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+}
+#fixed__media i {
+  color: #ffffff;
+  padding: 1rem;
+  padding-right: 2rem;
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out;
+  animation-name: whatsapp;
+  animation-duration: 0.3s;
+  animation-delay: 5s;
+}
+#fixed__media:hover i {
+  padding-right: 3rem;
+}
+@media (min-width: 768px) {
+  #fixed__media {
+    bottom: 5rem;
+  }
+  #fixed__media i {
+    font-size: 2.6rem;
+    padding: 1.5rem;
+    padding-right: 4rem;
+  }
+}
+@keyframes whatsapp {
+  0% {
+    padding-right: 2rem;
+  }
+  100% {
+    padding-right: 3rem;
+  }
+}
+
 #footer {
   background-color: #000000;
 }
