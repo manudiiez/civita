@@ -47,12 +47,14 @@
                 text-align: center;
             }
 
-            button{
+            a{
                 background-color: $color-blue-2;
                 color: $color-white;
                 padding: 1rem 0;
                 border: none;
                 width: 150px;
+                text-align: center;
+                text-decoration: none;
                 &:hover{
                     background-color: $color-black-3;
                 }
