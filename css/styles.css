@@ -1016,7 +1016,7 @@
   color: #00B912;
   font-weight: 400;
 }
-#modelo__info .body button {
+#modelo__info .body a {
   width: 100%;
   padding: 1rem 0;
   background-color: #25D366;
@@ -1027,12 +1027,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
-#modelo__info .body button:hover {
+#modelo__info .body a:hover {
   cursor: pointer;
   background-color: #17b652;
 }
-#modelo__info .body button i {
+#modelo__info .body a i {
   font-size: 2rem;
   margin-right: 1rem;
 }

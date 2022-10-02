@@ -25,12 +25,3 @@ sr.reveal('.animation__reveal__bottom', {
     origin: 'bottom',
     distance: '80px'
 })
-
-sr.reveal('.animation__reveal', {
-    duration: 3000
-})
-
-sr.reveal('.animation__scale', {
-    duration: 3000,
-    scale: 0.85
-})
