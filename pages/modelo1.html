@@ -15,7 +15,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header id="menu">
+    <header id="menu" class="bg__dark--fixed">
       <nav class="container__lg container">
         <div class="container__logo">
           <div>
@@ -48,7 +48,7 @@
     </header>
     <main>
       <section id="modelo__header">
-        <img src="../img/modelo1_img1.jpg" alt="">
+        <img src="../img/modelo1_img1.jpg" alt="" />
       </section>
       <section id="modelo__info" class="container__lg">
         <div class="body">
@@ -143,6 +143,36 @@
       </section>
     </main>
 
+    <section id="media">
+      <div id="fixed__media">
+        <i class="fa-brands fa-whatsapp icono"></i>
+      </div>
+      <div class="container">
+        <i class="fa-solid fa-xmark xmark" id="media__close"></i>
+        <ul>
+          <li>
+            <a href="https://api.whatsapp.com/send/?phone=2615398254&text=Hola%20CIVITA!%20%C2%BFComo%20est%C3%A1n?%20Tengo%20una%20consulta%20sobre" class="button">
+              <i class="fa-brands fa-whatsapp"></i>
+              <p>WhatsApp</p>                                                                               
+            </a>
+          </li>
+          <!-- <li>
+            <button class="button">
+              <i class="fa-solid fa-envelope"></i>
+              <p>Gmail</p>
+            </button>
+          </li> -->
+          <li>
+            <button class="button">
+              <i class="fa-brands fa-instagram"></i>
+              <p>Instagram</p>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="bg"></div>
+    </section>
+
     <footer id="footer">
       <div class="container__lg container">
         <h6>CIVITA</h6>
@@ -151,33 +181,67 @@
             <p class="title">Enlaces principales</p>
             <div class="link">
               <div></div>
-              <a href="#">Nosotros</a>
+              <a href="../index.html#nosotros">Nosotros</a>
             </div>
             <div class="link">
               <div></div>
-              <a href="#">Modelos</a>
+              <a href="../index.html#modelos">Modelos</a>
             </div>
           </div>
-          <div class="media">
-            <p class="title">Redes sociales</p>
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="fa-brands fa-whatsapp"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa-solid fa-envelope"></i>
-                </a>
-              </li>
-            </ul>
+          <div class="map">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=palmares&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe
+                ><br /><style>
+                  .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 100%;
+                    width: 100%;
+                  }</style
+                ><a href="https://www.embedgooglemap.net"></a
+                ><style>
+                  .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 100%;
+                    width: 100%;
+                  }
+                </style>
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="media">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-whatsapp"></i>
+                <p>2615398254</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+                <p>@civita__casas</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-envelope"></i>
+                <p>civitaconstrucciones@gmail.com</p>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>

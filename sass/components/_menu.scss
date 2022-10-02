@@ -8,7 +8,6 @@
     padding: 0 1rem;
     box-sizing: border-box;
     z-index: 300;
-    // display: none;
     
     
 
@@ -58,15 +57,18 @@
                 height: 100vh;
                 transition: right .4s ease-in-out;
 
-                i{
+                #button__xmark{
                     position: absolute;
                     top: 1rem;
                     left: 1rem;
+                    font-size: 2rem;
+                    color: $color-white;
+                    cursor: pointer;
                     &:hover{
                         color: rgb(255, 0, 0);
                     }
                 }
-                ul{
+                .links__list{
 
                     width: 100%;
                     height: 100%;
@@ -91,15 +93,64 @@
 
                             }
                         }
+
+                        .dropdown{
+                            width: 100%;
+                            height: 100%;
+                            list-style: none;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            margin: 0;
+                            padding: 0;
+                            .button{
+                                color: $color-white;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 100%;
+                                p{
+                                    padding: 1.5rem 0;
+                                    padding-right: .8rem;
+                                    display: block;
+                                    margin: 0;
+                                }
+                            }
+
+                            
+                            ul{
+                                width: 100%;
+                                height: 100%;
+                                max-height: 0;
+                                overflow-y: hidden;
+                                list-style: none;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                                margin: 0;
+                                padding: 0;
+                                background-color: $color-blue-1;
+                                transition: all .4s ease-in-out;
+                            }
+
+                            &:hover{
+                                ul{
+                                    max-height: 400px;
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
 
-        i{
-            font-size: 1.5rem;
+        #button__bars{
+            
+            font-size: 2rem;
             color: $color-white;
-
+            cursor: pointer;
         }
     }
 
@@ -114,7 +165,7 @@
         }
     }
 
-    &.bg__dark{
+    &.bg__dark, &.bg__dark--fixed{
         background-color: $color-black-3;
         .container__logo{
             top: 0;
@@ -149,7 +200,7 @@
                     background-color: transparent;
                     width: fit-content;
                     height: 100%;
-                    ul{
+                    .links__list{
                         flex-direction: row;
                         li{
                             width: fit-content;
@@ -162,12 +213,41 @@
 
                                 }
                             }
+
+                            .dropdown{
+                                width: 100%;
+                                position: relative;
+                                .button{
+                                    width: fit-content;
+                                    margin: 0 1rem;
+                                }
+                                ul{
+                                    top: 108%;
+                                    left: 0;
+                                    position: absolute;
+                                    height: 150px;
+                                    width: 200px;
+                                    background-color: $color-black-3;
+                                    li{
+                                        width: 100%;
+                                        a{
+                                            padding: .5rem 0;
+                                            &:hover{
+                                                background-color: $color-black-3;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
             }
 
-            i{
+            #button__bars{
+                display: none;
+            }
+            #button__xmark{
                 display: none;
             }
         }
