@@ -14,7 +14,7 @@
     <title>CIVITA</title>
   </head>
   <body>
-    <header id="menu">
+    <header id="menu" class="animation__reveal__top">
       <nav class="container__lg container">
         <div class="container__logo">
           <div>
@@ -69,7 +69,7 @@
     <main>
       <section id="header">
         <div class="body">
-          <div class="text">
+          <div class="text animation__reveal__bottom">
             <div class="title__container">
               <p class="title"><strong>CIVITA</strong></p>
               <p class="subtitle">DESARROLLOS <span>INMOBILIARIOS</span></p>
@@ -134,7 +134,7 @@
         <div class="container__lg container">
           <h4>Nuestros <span>Modelos</span></h4>
           <div class="modelos__list">
-            <div class="modelo__card">
+            <div class="modelo__card animation__reveal__left">
               <div class="body">
                 <div class="modelo__number">01</div>
                 <div class="modelo__text">
@@ -160,7 +160,7 @@
                   <div class="caracteristicas__row">
                     <div>
                       <i class="fa-solid fa-chart-area name"></i>
-                      <p class="value">Apartir de 90M2</p>
+                      <p class="value">Apartir de 90 m2</p>
                     </div>
                     <div>
                       <i class="fa-solid fa-toilet name"></i>
@@ -175,7 +175,7 @@
                 <a href="./pages/modelo1.html">Ver mas</a>
               </div>
             </div>
-            <div class="modelo__card">
+            <div class="modelo__card animation__reveal__right">
               <div class="body">
                 <div class="modelo__number">02</div>
                 <div class="modelo__text">
@@ -201,7 +201,7 @@
                   <div class="caracteristicas__row">
                     <div>
                       <i class="fa-solid fa-chart-area name"></i>
-                      <p class="value">Apartir de 90M2</p>
+                      <p class="value">Apartir de 90 m2</p>
                     </div>
                     <div>
                       <i class="fa-solid fa-toilet name"></i>
@@ -216,7 +216,7 @@
                 <a href="./pages/modelo2.html">Ver mas</a>
               </div>
             </div>
-            <div class="modelo__card">
+            <div class="modelo__card animation__reveal__left">
               <div class="body">
                 <div class="modelo__number">03</div>
                 <div class="modelo__text">
@@ -242,7 +242,7 @@
                   <div class="caracteristicas__row">
                     <div>
                       <i class="fa-solid fa-chart-area name"></i>
-                      <p class="value">Apartir de 90M2</p>
+                      <p class="value">Apartir de 90 m2</p>
                     </div>
                     <div>
                       <i class="fa-solid fa-toilet name"></i>
@@ -257,7 +257,7 @@
                 <a href="./pages/modelo3.html">Ver mas</a>
               </div>
             </div>
-            <div class="modelo__card">
+            <div class="modelo__card animation__reveal__right">
               <div class="body">
                 <div class="modelo__number">04</div>
                 <div class="modelo__text">
@@ -283,7 +283,7 @@
                   <div class="caracteristicas__row">
                     <div>
                       <i class="fa-solid fa-chart-area name"></i>
-                      <p class="value">Apartir de 90M2</p>
+                      <p class="value">Apartir de 90 m2</p>
                     </div>
                     <div>
                       <i class="fa-solid fa-toilet name"></i>
@@ -360,7 +360,7 @@
     </main>
 
     <section id="media">
-      <div id="fixed__media">
+      <div id="fixed__media" class="animation__reveal__right">
         <i class="fa-brands fa-whatsapp icono"></i>
       </div>
       <div class="container">
@@ -400,11 +400,11 @@
             <p class="title">Enlaces principales</p>
             <div class="link">
               <div></div>
-              <a href="#">Nosotros</a>
+              <a href="./pages/nosotros.html">Nosotros</a>
             </div>
             <div class="link">
               <div></div>
-              <a href="#">Modelos</a>
+              <a href="#modelos">Modelos</a>
             </div>
           </div>
           <div class="map">
@@ -451,14 +451,14 @@
             </li>
             <li>
               <a href="#">
-                <i class="fa-brands fa-instagram"></i>
-                <p>@civita__casas</p>
+                <i class="fa-solid fa-envelope"></i>
+                <p>civitaconstrucciones@gmail.com</p>
               </a>
             </li>
             <li>
               <a href="#">
-                <i class="fa-solid fa-envelope"></i>
-                <p>civitaconstrucciones@gmail.com</p>
+                <i class="fa-brands fa-instagram"></i>
+                <p>@civita__casas</p>
               </a>
             </li>
           </ul>
@@ -473,7 +473,6 @@
     ></script>
     <!-- ------------------------------ SWIPERJS ------------------------------- -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <!-- -------------------------------- MENU --------------------------------- -->
     <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
@@ -489,6 +488,10 @@
         },
       });
     </script>
+    <!-- ---------------------------- SCROOLREVEAL ----------------------------- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/scroll.js"></script>
+    <!-- -------------------------------- MENU --------------------------------- -->
     <script src="./js/menu.js"></script>
   </body>
 </html>

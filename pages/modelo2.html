@@ -15,7 +15,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header id="menu" class="bg__dark--fixed">
+    <header id="menu" class="bg__dark--fixed animation__reveal__top">
       <nav class="container__lg container">
         <div class="container__logo">
           <div>
@@ -40,10 +40,10 @@
                   <li>
                     <ul id="dropdown__container">
                       <li>
-                        <a href="#">¿Quienes somos?</a>
+                        <a href="./nosotros.html">Sobre nosotros</a>
                       </li>
                       <li>
-                        <a href="#">Proyectos en desarrollo</a>
+                        <a href="./proyectos.html">Nuestros proyectos</a>
                       </li>
                       <li>
                         <a href="#">CIVITA inversores</a>
@@ -69,11 +69,11 @@
     </header>
     <main>
       <section id="modelo__header">
-        <img src="../img/modelo2_img1.jpg" alt="">
+        <img src="../img/modelo2_img1.jpg" alt="" />
       </section>
-      <section id="modelo__info" class="container__lg">
+      <section id="modelo__info" class="container__lg animation__reveal__left">
         <div class="body">
-          <h1>Casa prefabricada Mónaco</h1>
+          <h1>Modelo Chiara</h1>
           <h2>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
             consequuntur tempore beatae odit aliquam qui in, deserunt ullam
@@ -84,7 +84,7 @@
             <div class="row">
               <div>
                 <p class="name">Desde</p>
-                <p class="value">$90000</p>
+                <p class="value price">$89.000</p>
               </div>
               <div>
                 <i class="fa-solid fa-bed name"></i>
@@ -94,7 +94,7 @@
             <div class="row">
               <div>
                 <i class="fa-solid fa-chart-area name"></i>
-                <p class="value">Apartir de 90M2</p>
+                <p class="value">Apartir de 90 m2</p>
               </div>
               <div>
                 <i class="fa-solid fa-toilet name"></i>
@@ -130,7 +130,7 @@
         </div>
       </section>
       <section id="modelo__features">
-        <div class="container__lg container">
+        <div class="container__lg container animation__reveal__right">
           <div class="body">
             <div>
               <p>Caracteristicas</p>
@@ -171,9 +171,12 @@
         <i class="fa-solid fa-xmark xmark" id="media__close"></i>
         <ul>
           <li>
-            <a href="https://api.whatsapp.com/send/?phone=2615398254&text=Hola%20CIVITA!%20%C2%BFComo%20est%C3%A1n?%20Tengo%20una%20consulta%20sobre" class="button">
+            <a
+              href="https://api.whatsapp.com/send/?phone=2615398254&text=Hola%20CIVITA!%20%C2%BFComo%20est%C3%A1n?%20Tengo%20una%20consulta%20sobre"
+              class="button"
+            >
               <i class="fa-brands fa-whatsapp"></i>
-              <p>WhatsApp</p>                                                                               
+              <p>WhatsApp</p>
             </a>
           </li>
           <!-- <li>
@@ -200,7 +203,7 @@
             <p class="title">Enlaces principales</p>
             <div class="link">
               <div></div>
-              <a href="../index.html#nosotros">Nosotros</a>
+              <a href="./nosotros.html">Nosotros</a>
             </div>
             <div class="link">
               <div></div>
@@ -214,7 +217,7 @@
                   width="100%"
                   height="100%"
                   id="gmap_canvas"
-                  src="https://maps.google.com/maps?q=palmares&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=rondeau%20323&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   frameborder="0"
                   scrolling="no"
                   marginheight="0"
@@ -250,14 +253,14 @@
             </li>
             <li>
               <a href="#">
-                <i class="fa-brands fa-instagram"></i>
-                <p>@civita__casas</p>
+                <i class="fa-solid fa-envelope"></i>
+                <p>civitaconstrucciones@gmail.com</p>
               </a>
             </li>
             <li>
               <a href="#">
-                <i class="fa-solid fa-envelope"></i>
-                <p>civitaconstrucciones@gmail.com</p>
+                <i class="fa-brands fa-instagram"></i>
+                <p>@civita__casas</p>
               </a>
             </li>
           </ul>
@@ -288,6 +291,9 @@
         },
       });
     </script>
+    <!-- ---------------------------- SCROOLREVEAL ----------------------------- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../js/scroll.js"></script>
     <!-- -------------------------------- MENU --------------------------------- -->
     <script src="../js/menu.js"></script>
   </body>
