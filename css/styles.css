@@ -437,14 +437,14 @@
   padding: 3rem 1rem;
   width: auto;
 }
-#modelos .container h4 {
+#modelos .container h2 {
   font-size: 2rem;
   font-weight: 400;
   text-align: center;
   margin: 0;
   margin-bottom: 3rem;
 }
-#modelos .container h4 span {
+#modelos .container h2 span {
   color: #0466C8;
 }
 #modelos .container .modelos__list {
@@ -475,13 +475,13 @@
   border: 10px solid #ABABAB;
   margin-bottom: 1.5rem;
 }
-#modelos .container .modelos__list .modelo__card .body .modelo__text h5 {
+#modelos .container .modelos__list .modelo__card .body .modelo__text h3 {
   font-size: 2rem;
   font-weight: 400;
   margin: 0;
   margin-bottom: 1.5rem;
 }
-#modelos .container .modelos__list .modelo__card .body .modelo__text p {
+#modelos .container .modelos__list .modelo__card .body .modelo__text h4 {
   font-size: 1rem;
   font-weight: 300;
   margin: 0;
