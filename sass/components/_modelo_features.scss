@@ -1,5 +1,7 @@
 #modelo__features{
     background-color: $color-gray-1;
+    overflow-x: hidden;
+
     .container{
         display: flex;
         justify-content: center;

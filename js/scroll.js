@@ -11,7 +11,8 @@ sr.reveal('.animation__reveal__left', {
 sr.reveal('.animation__reveal__right', {
     duration: 3000,
     origin: 'right',
-    distance: '100px'
+    distance: '100px',
+
 })
 
 sr.reveal('.animation__reveal__top', {

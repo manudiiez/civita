@@ -431,6 +431,7 @@
 
 #modelos {
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 #modelos .container {
   padding: 3rem 1rem;
@@ -1090,6 +1091,7 @@
 
 #modelo__features {
   background-color: #DCDFE5;
+  overflow-x: hidden;
 }
 #modelo__features .container {
   display: flex;
@@ -1317,6 +1319,7 @@
 #nosotros__info .container .img {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 #nosotros__info .container .img img {
   width: 100%;
