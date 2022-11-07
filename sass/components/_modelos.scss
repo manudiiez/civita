@@ -155,12 +155,11 @@
             .modelos__list{
                 .modelo__card{
                     margin-bottom: 6rem;
-
+                    gap: 1rem;
                     flex-direction: row-reverse;
                     padding: 2rem 5rem 5rem;
                     .body{
-                        width: 100%;
-                        padding-left: 1rem;
+                        width: 85%;
                         .modelo__number{
                             font-size: 2.5rem;
                             width: 120px;
@@ -222,6 +221,13 @@
                             object-fit: cover;
                             object-position: 50% 50%;
                             margin: 0;
+                            transition: all .5s ease ;
+                            &:hover{
+                                border: none;
+                                width: 190%;
+                                height: 550px;
+                                transform: translateY(6.3rem);
+                            }
                         }
 
                         a{
