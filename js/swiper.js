@@ -12,8 +12,7 @@ swiperButtons.forEach(btn => {
     })
 })
 
-imgOpenBg.addEventListener('click', () => {
-    console.log('click');
+imgOpenContainer.addEventListener('click', () => {
     imgOpenContainer.classList.remove('active')
 })
 
