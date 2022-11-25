@@ -14,11 +14,13 @@
 @import './components/proyectos';
 @import './components/nosotros__header';
 @import './components/nosotros_features';
+@import './components/prueba';
 
 body{
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+    line-height: 25px;
 }
 
 html{

@@ -40,9 +40,9 @@
         @media (min-width: 768px) {
             flex-direction: row-reverse;
             justify-content: space-between;
+            align-items: stretch;
             padding: 5rem 0;
             .img{
-                height: 520px;
                 width: 100%;
                 max-width: 489px;
                 img{
