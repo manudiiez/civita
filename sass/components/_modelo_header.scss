@@ -39,6 +39,7 @@
     
     img{
         width: calc(100% - 2rem);
+        max-width: 992px;
         z-index: 102;
         height: fit-content;
         object-fit: contain;
