@@ -223,7 +223,7 @@
 #header {
   width: 100%;
   height: 300px;
-  background-image: url("..img/img-civita-header01.jpg");
+  background-image: url("../../img/img-civita-header01.jpg");
   background-size: cover;
   background-position: center;
   margin-bottom: 260px;
@@ -1356,7 +1356,7 @@
 #nosotros__header {
   width: 100%;
   height: 300px;
-  background-image: url("../img/img-civita-header01.jpg");
+  background-image: url("../../img/img-civita-header01.jpg");
   background-size: cover;
   background-position: center;
 }
