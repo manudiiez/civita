@@ -2,7 +2,6 @@ const swiperButtons = document.querySelectorAll('#swiper .swiper-slide button')
 const imgOpenContainer = document.querySelector('#imgOpen')
 const imgOpenBg = document.querySelector('#imgOpen .bg')
 const imgOpenImg = document.querySelector('#imgOpen img')
-console.log(imgOpenBg);
 
 swiperButtons.forEach(btn => {
     btn.addEventListener('click', () => {
