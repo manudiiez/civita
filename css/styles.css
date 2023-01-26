@@ -243,6 +243,9 @@
   color: #ffffff;
   padding: 3rem 1rem;
 }
+#header .body .text img {
+  margin-bottom: 2rem;
+}
 #header .body .text .title {
   font-size: 5rem;
   margin: 0;
